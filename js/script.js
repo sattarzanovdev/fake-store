@@ -37,7 +37,7 @@ function cardTemplate(base) {
                <img src="${item.image}">
             </div>
             <div class="card-footer">
-               <button onclick="getRoute('${item.id}')" class="more_btn">Buy Now</button>
+               <button onclick="getRoute('${item.id}')" class="more_btn">Buy</button>
             </div>
          </div>
       `

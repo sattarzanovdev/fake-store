@@ -64,26 +64,7 @@ body{
 
 
 .card h1{
-  font-family: ubuntu;
+  font-family: montserrat;
   color: white;
   text-shadow: 0 0 3px black;
-}
-
-.password {
-	position: relative;
-}
-.password-control {
-	position: absolute;
-	/* top: 11px; */
-	/* right: 6px; */
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: url('https://www.pngkit.com/png/full/289-2895341_eye-vector-icon.png') 0 0 no-repeat;
-  z-index: 1;
-  filter: invert();
-}
-.password-control.view {
-	background: url('https://www.pngkit.com/png/full/289-2895341_eye-vector-icon.png') 0 0 no-repeat;
-  z-index: 1;
 }
