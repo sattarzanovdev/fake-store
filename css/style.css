@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput{
+  width: 500px;
+  height: 40px;
+  margin-top: 25px;
+  padding-left: 15px;
+  font-family: montserrat;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 350px;
+  height: 400px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background: wheat;
+}
+
+.card-header {
+  font-family: montserrat;
+}
+
+.card-image{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img{
+  width: 150px;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.card-footer button{
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  background: rebeccapurple;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.card-footer button:hover{
+  animation: shadow 2s infinite;
+  transition: .5s;
+}
+
+@keyframes shadow {
+  0%{
+    box-shadow: 0 0 10px rebeccapurple;
+  }
+}
+
+.more_card{
+  width: 1000px;
+  height: 70vh;
+  background: wheat;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px wheat;
+  border-radius: 15px;
+}
+
+.more_info{
+  margin-left: 50px;
+}
+
+.more_title h2{
+  font-family: montserrat;
+  margin-bottom: 25px;
+}
+
+.list {
+  list-style: none;
+  font-family: montserrat;
+}
+
+.list_footer{
+  margin-top: 25px;
+  font-family: montserrat;
+}
+
+.list li{
+  margin-top: 25px;
+}
+
+.more_image img{
+  width: 350px;
+}
+
+.back_btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  cursor: pointer;
+  background: wheat;
+  border: 0;
+  border-radius: 5px;
+}
+
+.back_btn img{
+  width: 35px;
+}
