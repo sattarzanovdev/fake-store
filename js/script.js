@@ -14,6 +14,7 @@ window.addEventListener('load', () => {
       cardTemplate(cb)
       console.log(cb);
    })
+   allBase()
 })
 
 $search.addEventListener('input', e => {
@@ -28,16 +29,17 @@ function cardTemplate(base) {
    const newBase = base.map(item => {
       return `
          <div class="card">
-          <div class="card-header">
-            <h3>
-                ${item.title.length > 20 ? item.title.slice(0,15) + '...' : item.title} / ${item.price}$
-            </h3>
-          </div>
+            <div class="card-header">
+               <h3>
+                  ${item.title.length > 20 ? item.title.slice(0,15) + '...' : item.title}
+               </h3>
+               <h3>${item.price}$</h3>
+            </div>
             <div class="card-image">
                <img src="${item.image}">
             </div>
             <div class="card-footer">
-               <button onclick="getRoute('${item.id}')" class="more_btn">Buy</button>
+               <button onclick="getRoute('${item.id}')" class="more_btn">More</button>
             </div>
          </div>
       `
@@ -63,15 +65,17 @@ function moreInfo(item) {
                <h2>Category: ${item.title}</h2>
             </div>
             <ul class="list">
-               <li>Category: ${item.category}</li>
-               <li>Price: ${item.price}$</li>
-               <li>Rate: ${item.rating.rate}</li>
-               <li>Сount: ${item.rating.count} pieces</li>
+               <li>Category: <span>${item.category}</span></li>
+               <li>Price: <span>${item.price}$</span></li>
+               <li>Rate: <span>${item.rating.rate}</span></li>
+               <li>Сount: <span>${item.rating.count} pieces</span></li>
             </ul>
             <div class="list_footer">
                <p>Description: ${item.description}</p>
             </div>
-            <button class="back_btn" onclick="goBack()"><img src="https://o.remove.bg/downloads/347466ed-c7f4-4743-a493-2b3a5ea9d6c5/png-clipart-arrow-computer-icons-arrow-angle-arrow-thumbnail-removebg-preview.png"></button>
+            <button class="back_btn" onclick="goBack()">
+               <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png">
+            </button>
          </div>
       </div>
    `

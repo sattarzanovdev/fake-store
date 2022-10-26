@@ -1,134 +1,136 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: rubik;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
-.search{
+body .search {
   display: flex;
+  align-items: center;
   justify-content: center;
-}
-
-.searchInput{
-  width: 500px;
-  height: 40px;
-  margin-top: 25px;
-  padding-left: 15px;
-  font-family: montserrat;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.card{
-  width: 350px;
-  height: 400px;
   padding: 15px;
-  border: 2px solid black;
-  border-radius: 5px;
-  text-align: center;
-  background: wheat;
 }
-
-.card-header {
-  font-family: montserrat;
-}
-
-.card-image{
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-image img{
-  width: 150px;
-}
-
-.card-footer{
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.card-footer button{
-  cursor: pointer;
-  width: 150px;
-  height: 35px;
-  background: rebeccapurple;
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  transition: .5s;
-}
-
-.card-footer button:hover{
-  animation: shadow 2s infinite;
-  transition: .5s;
-}
-
-@keyframes shadow {
-  0%{
-    box-shadow: 0 0 10px rebeccapurple;
-  }
-}
-
-.more_card{
-  width: 1000px;
-  height: 70vh;
-  background: wheat;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 10px wheat;
-  border-radius: 15px;
-}
-
-.more_info{
-  margin-left: 50px;
-}
-
-.more_title h2{
-  font-family: montserrat;
-  margin-bottom: 25px;
-}
-
-.list {
-  list-style: none;
-  font-family: montserrat;
-}
-
-.list_footer{
-  margin-top: 25px;
-  font-family: montserrat;
-}
-
-.list li{
-  margin-top: 25px;
-}
-
-.more_image img{
+body .search input {
   width: 350px;
+  height: 45px;
+  padding-left: 15px;
+  background: #2F4858;
+  color: #F6AE2D;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
 }
-
-.back_btn{
+body .search input::-moz-placeholder {
+  color: white;
+}
+body .search input:-ms-input-placeholder {
+  color: white;
+}
+body .search input::placeholder {
+  color: white;
+}
+body .container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+body .container .card {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #2F4858;
+  border-radius: 10px;
+  padding: 5px;
+}
+body .container .card .card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+body .container .card .card-header h3 {
+  color: white;
+}
+body .container .card .card-header h3:nth-child(2) {
+  color: #F6AE2D;
+}
+body .container .card .card-image img {
+  width: 320px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 10px;
+}
+body .container .card .card-footer {
+  padding: 15px;
+}
+body .container .card .card-footer button {
+  width: 320px;
+  height: 50px;
+  background: #F6AE2D;
+  color: #2F4858;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container .more_card {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container .more_card .more_image img {
+  width: 300px;
+}
+body .container .more_card .more_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container .more_card .more_info .more_title {
+  text-align: center;
+  margin-top: 50px;
+}
+body .container .more_card .more_info .list {
+  width: 90%;
+  padding: 0;
+}
+body .container .more_card .more_info .list li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #2F4858;
+}
+body .container .more_card .more_info .list_footer {
+  text-align: center;
+}
+body .container .more_card .back_btn {
   width: 50px;
   height: 50px;
   position: absolute;
   left: 50px;
   top: 50px;
-  cursor: pointer;
-  background: wheat;
+  background: #F6AE2D;
   border: 0;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-
-.back_btn img{
-  width: 35px;
-}
+body .container .more_card .back_btn img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
